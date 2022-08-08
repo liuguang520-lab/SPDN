@@ -41,6 +41,14 @@ cd ../..
 python3 train_baseline.py --method PRETRAIN --dataset miniImagenet --name PRETRAIN --train_aug
 ```
 
+### Training with multiple seen domains
+Baseline training w/o feature-wise transformations.
+- `METHOD` : metric-based framework `gnnnet`.
+- `TESTSET`: unseen domain `cars`, `cub`, `places`, or `plantae`.
+```
+python3 train_baselineSSL.py --method METHOD --dataset multi --testset TESTSET --name multi_TESTSET_ori_METHOD --warmup PRETRAIN --train_aug
+```
+
 
 
 ### Evaluation
